@@ -1,0 +1,4 @@
+การใช้คลาส (class) และการสืบทอด (inheritance)
+มีการสร้าง class Machine เป็นคลาสหลัก (superclass) ที่มีคุณสมบัติพื้นฐานคือ os และ disk
+class Computer และ class VM สืบทอด (extends) มาจาก Machine ทำให้สามารถใช้งานosกับdiskจาก Machine ได้เลย
+การใช้throw error ใช้ try catch
