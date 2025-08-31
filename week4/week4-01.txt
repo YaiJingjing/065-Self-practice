@@ -1,0 +1,1 @@
+ได้ฝึกใข้if else และfor loopรวมถึงใช้switch caseในการหาคำตอบ
