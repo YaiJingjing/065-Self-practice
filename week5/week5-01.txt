@@ -1,0 +1,18 @@
+การสร้างคลาส (class)
+
+ใช้ class book { ... } เพื่อสร้าง blueprint ของ object ที่ชื่อว่า book
+มี constructor() เอาไว้กำหนดค่าเริ่มต้นให้กับ object ที่สร้างจากคลาสนี้
+การตรวจสอบชนิดข้อมูล (Type checking)
+ใช้ typeof เพื่อตรวจสอบชนิดของค่าที่รับเข้ามา
+ถ้าไม่ตรงตามที่กำหนด ให้ throw TypeError("ข้อความ") เพื่อแจ้งข้อผิดพลาด
+ตัวอย่าง: typeof title !== "string" → ถ้าไม่ใช่ string จะ error
+การใช้ property และ method ของคลาส
+เก็บข้อมูลลงใน property: this.title, this.author, this.pages, this.isRead
+ใช้ method getSummary() เพื่อคืนค่าข้อความบอกสถานะว่าอ่านแล้วหรือยัง
+การใช้ try...catch
+ใช้ try { ... } catch(error) { ... } เพื่อจัดการ error ไม่ให้โปรแกรมหยุดทำงานทันที
+ใน catch สามารถเข้าถึง error.message ได้
+การสร้าง object จากคลาส
+const a = new book("dragonball super", "akira toriyama", 255, true) → ข้อมูลถูกต้อง
+const c = new book("dragonball daima","akira toriyama","255",false) → error เพราะ "255" เป็น string ไม่ใช่ number
+const d = new book("dragonball z","akira toriyama",255,"14") → error เพราะ "14" เป็น string ไม่ใช่ boolean
